@@ -1,10 +1,8 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-
         System.out.println(menu());
         int op = input.nextInt();
         double altura;
@@ -43,10 +41,7 @@ public class Main {
         System.out.println("Digite os números: ");
         double N1 = input.nextDouble();
         double N2 = input.nextDouble();
-
         return N1 + N2;
-
-
     }
 
     public static double calcularIMC(double peso, double altura) {
@@ -56,13 +51,14 @@ public class Main {
     public static void categoriaIMC(double IMC) {
 
         if (IMC < 18.5) {
-            System.out.println("Peso abaixo do normal");
+            System.out.printf("IMC: %.2f %nPeso abaixo do normal", IMC);
         } else if (IMC >= 18.5 && IMC <= 25.0) {
-            System.out.println("Peso normal");
+            System.out.printf("IMC: %.2f %nPeso normal", IMC);
         } else if (IMC > 25.0 && IMC <= 30.0) {
-            System.out.println("Sobrepeso");
+            System.out.printf("IMC: %.2f %nSobrepeso", IMC);
         } else if(IMC > 30.0 && IMC <= 35)    {
-            System.out.println("Grau de Obesidade I");
+            System.out.printf("IMC: %.2f %nGrau de Obesidade I", IMC);
         }
     }
 }
+
