@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PrimeiraQuestao {
+public class Main {
     public static void main(String[] args) {
 
         String senha = "2018";
